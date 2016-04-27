@@ -3,18 +3,12 @@ import java.awt.*;
 public class Main {
 
     public static void main(String[] args) {
-        Draw(2,3,'*');
-        Draw(3,4,'-');
+        Point p1 = new Point();
+        p1.x = 1;
+        p1.y = 3;
+        p1.sym= 'i';
+        p1.Draw(p1.x,p1.y,p1.sym);
 
     }
-    static void Draw(int x, int y, char sym){
-        for(int i = 0; i<y;i++){
-            System.out.println();
-            for(int j=0;j<x;j++){
-                System.out.print(" ");
-            }
-        }
-        System.out.println(sym);
-       
-    }
+
 }
